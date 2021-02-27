@@ -12,3 +12,37 @@
 .country-list img{
     width: 60%;
 }
+.country-list button{
+  margin:15px;
+  background-color: goldenrod;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+.country-list button:hover{
+  color: red;
+}
+@media(max-width:992px){
+  .country-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media(max-width:768px){
+  .country-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media(max-width:576px){
+  .country-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
